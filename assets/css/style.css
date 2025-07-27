@@ -6,6 +6,14 @@ header, .navbar {
     padding: 10px 20px;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #e0e0e0; /* Ensure background matches your theme */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -25,11 +33,24 @@ header, .navbar {
     color: #ff9900; /* Accent color for hover, adjust as needed */
 }
 
+/*logo */
+.logo img {
+    height: 120px; /* Double the original 60px */
+    width: auto;
+}
+
 /*heading colors */
 h1, h2, h3, h4, h5, h6 {
-    color: #1a2236; /* Use your logo's main color */
+    color: #1a2236;
     font-family: inherit;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 1px;
 }
+
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.6rem; }
 
 body {
     background: #f5f5f5; /* Slightly lighter than header for contrast */
@@ -301,14 +322,62 @@ section, footer {
 }
 
 /* Footer */
+footer {
+    background: #e0e0e0;
+    border-radius: 8px;
+    margin: 24px auto 0 auto;
+    max-width: 1100px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    padding: 18px 10px 12px 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 .footer-locations {
-    margin-top: 8px;
+    text-align: left;
+    color: #1a2236;
     font-size: 1em;
+}
+
+.footer-locations ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
+.footer-locations li {
+    margin-bottom: 4px;
+}
+
+.footer-contact {
+    text-align: right;
+    margin-left: auto;
+}
+
+.footer-contact-link {
+    color: #1a2236;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    background: #ff9900;
+    transition: background 0.2s, color 0.2s;
+}
+
+.footer-contact-link:hover {
+    background: #1a2236;
     color: #fff;
 }
-footer {
-    background: #333;
-    color: #fff;
+
+.footer-copy {
     text-align: center;
-    padding: 18px 10px 12px 10px;
+    color: #1a2236;
+    margin-top: 18px;
+    font-size: 0.95em;
 }
