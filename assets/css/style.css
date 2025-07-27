@@ -1,3 +1,37 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background: #fff;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -10,32 +44,38 @@ header {
     padding: 10px 20px;
 }
 
-
-nav {
+.stats-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 60px;
+    background: linear-gradient(to bottom, #1a2236, #2c3150);
+    color: #fff;
+    padding: 50px 0 40px 0;
+    margin: 40px 0;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
+.stat-card {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
+.stat-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.nav-links a.active {
-    text-decoration: underline;
+.stat-label {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 /* About page section */
@@ -57,9 +97,6 @@ nav {
     color: #333;
 }
 
-
-
-
 .hero .btn {
     background: #ff9900;
     color: #fff;
@@ -67,6 +104,60 @@ nav {
     text-decoration: none;
     border-radius: 5px;
 }
+
+.tarmic-quote-section {
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
+
+.tarmic-quote-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.tarmic-quote-section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.learn-more-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+.learn-more-link:hover {
+    color: #ff9900;
+}
+
+.locations {
+    background: #f4f4f4;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.locations h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.locations ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+.locations li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
 /* ===== SERVICES PAGE ===== */
 .services-page {
     max-width: 1000px;
