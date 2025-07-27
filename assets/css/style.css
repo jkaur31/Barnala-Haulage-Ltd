@@ -58,13 +58,7 @@ nav {
 }
 
 
-.hero {
-    background: url('../images/banner.png') no-repeat center center/cover;
-    height: 400px;       /* set height so the image is visible */
-    color: white;
-    text-align: center;
-    padding-top: 100px;
-}
+
 
 .hero .btn {
     background: #ff9900;
