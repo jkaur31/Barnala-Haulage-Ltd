@@ -15,9 +15,10 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About us</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact.html" class="active">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -44,9 +45,38 @@
                 Email: <a href="mailto:Barnalahaulage@gmail.com" class="contact-link">Barnalahaulage@gmail.com</a>
             </p>
         </div>
-        <div class="contact-image">
-            <img src="assets/images/truck.png" alt="Haulage Truck" />
+        <div class="contact-form">
+            <h2 class="contact-section-title">WRITE TO US</h2>
+            <form action="send-message.php" method="POST" class="form">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="form-btn">Send Message</button>
+            </form>
         </div>
+
     </section>
 
     <!-- location section-->
@@ -54,25 +84,26 @@
         <h2 class="find-us-title">How to Find Us</h2>
         <div class="find-us-directions">
             <div class="direction-block">
-                <h3 class="direction-heading">FROM M25 NORTH &amp; SOUTH</h3>
+                <h3 class="direction-heading">FROM M11 → J14</h3>
                 <p>
-                    Leave M25 at junction 15 and join the M4 Westbound<br>
-                    Leave M4 at junction 5<br>
-                    Take the first exit from the junction 5 roundabout onto London Road, then turn left on to Sutton Lane, at the end of Sutton Lane turn right on to North Park, at the roundabout turn left (first exit) onto Thorney Lane South and follow the signs for Thorney Business Park
+                    Leave M11 at junction 14 and <br>
+                    Take Huntingdon Road (A1307) into King’s Hedges (CB4)5<br>
+                    Turn into Armitage Way for the final leg.
                 </p>
             </div>
             <div class="direction-block">
-                <h3 class="direction-heading">FROM M4 EAST</h3>
+                <h3 class="direction-heading">FROM M11 → J13</h3>
                 <p>
-                    Leave M4 at junction 5<br>
-                    Take the first exit from the junction 5 roundabout onto London Road, then turn left on to Sutton Lane, at the end of Sutton Lane turn right on to North Park, at the roundabout turn left (first exit) onto Thorney Lane South and follow the signs for Thorney Business Park
+                    Leave M11 at junction 13<br>
+                    Head into city via local roads into West Cambridge.<br>
+                    Continue northeast through King’s Hedges to Armitage Way
                 </p>
             </div>
             <div class="direction-block">
-                <h3 class="direction-heading">FROM M4 WEST</h3>
+                <h3 class="direction-heading">FROM A14/A428</h3>
                 <p>
-                    Leave M4 at junction 5<br>
-                    Take the third exit from the junction 5 roundabout onto London Road, then turn left on to Sutton Lane, at the end of Sutton Lane turn right on to North Park, at the roundabout turn left (first exit) onto Thorney Lane South and follow the signs for Thorney Business Park
+                    Exit at Swavesey or Junction 14 depending on direction.<br>
+                    Enter Cambridge via A1307, then navigate local streets into CB4.
                 </p>
             </div>
         </div>
